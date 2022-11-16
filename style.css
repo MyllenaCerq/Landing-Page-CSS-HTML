@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  /*a cada 1rem será considerado 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family:'Poppins', sans-serif;
+  background-color: rgb(34, 34, 34);
+  color: #fff;
+  min-width: 100vw;
+}
+
+main.principal {
+  width: 100%;
+  max-width: 980px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  padding: 2rem 4rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 980px;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 300;
+  line-height: 3.5rem;
+}
+
+header ul li {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+}
+
+header ul li:first-child {
+  padding-left: 0;
+}
+
+header ul li a {
+  color: #fff;
+}
+
+header ul li a:hover {
+  border-bottom: #7EE081 solid 2px;
+  color: #7EE081;
+}
+
+.section-1 {
+  width: 50vw;
+  margin-left: 30px;
+}
+
+.section-2 {
+  width: 50vw;
+  margin-right: 30px;
+}
+
+.section-2.h2{
+  width: 100%;
+  max-width: 490px;
+}
+
+h2 {
+  font-weight: 200;
+  line-height: 4.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 4rem;
+}
+
+h2 strong {
+  color: #7EE081;
+}
+
+p {
+  text-align: center;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  width: 100%;
+  max-width: 400px;
+  height: 4.5rem;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 55px;
+  border: none;
+  font-size: 16px;
+}
+
+input.btn {
+  width: 45%;
+  cursor: pointer;
+}
+
+input.btn:hover {
+  background: #7EE081;
+  transition: all .2s ease-in-out;
+  letter-spacing: 4px;
+}
+
+input[type="submit"] {
+  font-weight: 750;
+  letter-spacing: 1.5px;
+  color: rgb(34, 34, 34, 34);
+}
+
+.section-2 img {
+  width: 70%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-left: 90px;
+}
+
+
+
+@media (max-width: 964px) {
+
+    html{
+      font-size: 50%;
+    }
+
+    .section-2 img {
+      width: 50%;
+    }
+
+    form input {
+      width: 100%;
+      max-width: 350px;
+      padding: 15px;
+      height: 5rem;
+    }
+
+    input.btn {
+      width: 50%;
+      padding: 3px;
+    }
+
+    header {
+      margin-bottom: 9rem;
+    }
+ 
+}
+
+@media (max-width:777px) {
+
+  main {
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+  header {
+    margin-bottom: 2rem;
+  }
+
+  main .section-1 {
+    margin: 0 auto;
+    max-width: 980px;
+  }
+
+  main .section-2 {
+    margin: 0 auto;
+    max-width: 980px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    order: -1;
+  }
+
+  main.section-2 img {
+    padding: 0;
+    margin-left: 0px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 3.9rem;
+    display: block;
+    flex-wrap: nowrap;
+  } 
+}
+
+@media (max-width: 637px) {
+  
+  h2.h2 {
+    font-size: 3.5rem;
+  
+  }
+}
+
+@media (max-width: 637px) {
+
+  h2.h2 {
+    font-size: 3rem;
+  }
+
+  main .section-2 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 499px) {
+
+  header nav {
+    display: none;
+  }
+
+
+  ul li a {
+    margin: 0;
+  }
+
+  h2.h2 {
+    display: block;
+  }
+}
